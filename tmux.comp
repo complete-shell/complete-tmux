@@ -1,0 +1,23 @@
+CompleteShell v0.2
+
+N tmux
+
+O -2            ..Force tmux to assume the terminal supports 256 colours
+O -C            ..Start in control mode
+O -c =str       ..Execute command using the default shell
+O -f =file      ..Alternate config file
+O -L =socket    ..Specify the name of the server socket to use
+O -l            ..Behave as a login shell
+O -S =file      ..Full path to sever socket. If set, -L is ignored.
+O -u            ..Flag explicitly informs tmux that UTF-8 is supported
+O -v            ..Request verbose logging
+O -V            ..Report the tmux version
+
+C attach-session    ..Create a new client in the current terminal
+  O -t ='target session'
+C detach-client     ..Detach the current client
+  O -t ='target session'
+C has-session       ..Return 0 if session exists, else 0
+  O -t ='target session'
+C list-clients      ..List all clients attached to the server
+  O -t ='target session'
